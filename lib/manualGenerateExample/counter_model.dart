@@ -7,10 +7,11 @@ class CounterModel {
     init();
   }
 
-  //Action hem store içerisinde hem de widget içerisinde kullanılabilir.
-  late Action incrementCounter = Action((){
-      counterData.value++;
-  });
+  //Action hem store içerisinde hem de widget içerisinde kullanılabilir. 
+  //Ben bu projede widget içerisinde Action'u tetikledim fakat örnek olması için bu kullanımı da buraya bırakıyorum.
+  //late Action incrementCounter = Action((){
+  //    counterData.value++;
+  //});
 
   void init() {
     reaction((_) => counterData.value, (_) {
